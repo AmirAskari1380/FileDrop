@@ -1,0 +1,28 @@
+.file-input {
+    display: grid;
+    grid-template-areas: "stack";
+    width: 360px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.file-input > * {
+    grid-area: stack;
+}
+
+.file-input > input {
+    opacity: 0;
+}
+
+.file-input > .drop-zone {
+    margin: 12px;
+    border: dashed 2px #aaa;
+    border-radius: 4px;
+    transition: margin 200ms;
+}
+
+.file-input.active > .drop-zone {
+    margin: 14px;
+    background-color: #dadada;
+}
